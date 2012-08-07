@@ -1910,6 +1910,401 @@ public final class JOutPiqi {
     // @@protoc_insertion_point(class_scope:message)
   }
   
+  public interface timer_repeatsOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // optional bool infinity = 1;
+    boolean hasInfinity();
+    boolean getInfinity();
+    
+    // optional uint32 repeats = 2;
+    boolean hasRepeats();
+    int getRepeats();
+  }
+  public static final class timer_repeats extends
+      com.google.protobuf.GeneratedMessage
+      implements timer_repeatsOrBuilder {
+    // Use timer_repeats.newBuilder() to construct.
+    private timer_repeats(Builder builder) {
+      super(builder);
+    }
+    private timer_repeats(boolean noInit) {}
+    
+    private static final timer_repeats defaultInstance;
+    public static timer_repeats getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public timer_repeats getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return JOutPiqi.internal_static_timer_repeats_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return JOutPiqi.internal_static_timer_repeats_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // optional bool infinity = 1;
+    public static final int INFINITY_FIELD_NUMBER = 1;
+    private boolean infinity_;
+    public boolean hasInfinity() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public boolean getInfinity() {
+      return infinity_;
+    }
+    
+    // optional uint32 repeats = 2;
+    public static final int REPEATS_FIELD_NUMBER = 2;
+    private int repeats_;
+    public boolean hasRepeats() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public int getRepeats() {
+      return repeats_;
+    }
+    
+    private void initFields() {
+      infinity_ = false;
+      repeats_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBool(1, infinity_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeUInt32(2, repeats_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, infinity_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, repeats_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static JOutPiqi.timer_repeats parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JOutPiqi.timer_repeats parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JOutPiqi.timer_repeats parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JOutPiqi.timer_repeats parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(JOutPiqi.timer_repeats prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements JOutPiqi.timer_repeatsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return JOutPiqi.internal_static_timer_repeats_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return JOutPiqi.internal_static_timer_repeats_fieldAccessorTable;
+      }
+      
+      // Construct using JOutPiqi.timer_repeats.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        infinity_ = false;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        repeats_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return JOutPiqi.timer_repeats.getDescriptor();
+      }
+      
+      public JOutPiqi.timer_repeats getDefaultInstanceForType() {
+        return JOutPiqi.timer_repeats.getDefaultInstance();
+      }
+      
+      public JOutPiqi.timer_repeats build() {
+        JOutPiqi.timer_repeats result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private JOutPiqi.timer_repeats buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        JOutPiqi.timer_repeats result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public JOutPiqi.timer_repeats buildPartial() {
+        JOutPiqi.timer_repeats result = new JOutPiqi.timer_repeats(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.infinity_ = infinity_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.repeats_ = repeats_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof JOutPiqi.timer_repeats) {
+          return mergeFrom((JOutPiqi.timer_repeats)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(JOutPiqi.timer_repeats other) {
+        if (other == JOutPiqi.timer_repeats.getDefaultInstance()) return this;
+        if (other.hasInfinity()) {
+          setInfinity(other.getInfinity());
+        }
+        if (other.hasRepeats()) {
+          setRepeats(other.getRepeats());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              infinity_ = input.readBool();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              repeats_ = input.readUInt32();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // optional bool infinity = 1;
+      private boolean infinity_ ;
+      public boolean hasInfinity() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public boolean getInfinity() {
+        return infinity_;
+      }
+      public Builder setInfinity(boolean value) {
+        bitField0_ |= 0x00000001;
+        infinity_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearInfinity() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        infinity_ = false;
+        onChanged();
+        return this;
+      }
+      
+      // optional uint32 repeats = 2;
+      private int repeats_ ;
+      public boolean hasRepeats() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public int getRepeats() {
+        return repeats_;
+      }
+      public Builder setRepeats(int value) {
+        bitField0_ |= 0x00000002;
+        repeats_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearRepeats() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        repeats_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:timer_repeats)
+    }
+    
+    static {
+      defaultInstance = new timer_repeats(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:timer_repeats)
+  }
+  
   public interface timerOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
@@ -1921,9 +2316,10 @@ public final class JOutPiqi {
     boolean hasDuration();
     int getDuration();
     
-    // required uint32 repeats = 3;
+    // required .timer_repeats repeats = 3;
     boolean hasRepeats();
-    int getRepeats();
+    JOutPiqi.timer_repeats getRepeats();
+    JOutPiqi.timer_repeatsOrBuilder getRepeatsOrBuilder();
   }
   public static final class timer extends
       com.google.protobuf.GeneratedMessage
@@ -1996,20 +2392,23 @@ public final class JOutPiqi {
       return duration_;
     }
     
-    // required uint32 repeats = 3;
+    // required .timer_repeats repeats = 3;
     public static final int REPEATS_FIELD_NUMBER = 3;
-    private int repeats_;
+    private JOutPiqi.timer_repeats repeats_;
     public boolean hasRepeats() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public int getRepeats() {
+    public JOutPiqi.timer_repeats getRepeats() {
+      return repeats_;
+    }
+    public JOutPiqi.timer_repeatsOrBuilder getRepeatsOrBuilder() {
       return repeats_;
     }
     
     private void initFields() {
       id_ = "";
       duration_ = 0;
-      repeats_ = 0;
+      repeats_ = JOutPiqi.timer_repeats.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2042,7 +2441,7 @@ public final class JOutPiqi {
         output.writeUInt32(2, duration_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(3, repeats_);
+        output.writeMessage(3, repeats_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2063,7 +2462,7 @@ public final class JOutPiqi {
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, repeats_);
+          .computeMessageSize(3, repeats_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2181,6 +2580,7 @@ public final class JOutPiqi {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRepeatsFieldBuilder();
         }
       }
       private static Builder create() {
@@ -2193,7 +2593,11 @@ public final class JOutPiqi {
         bitField0_ = (bitField0_ & ~0x00000001);
         duration_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
-        repeats_ = 0;
+        if (repeatsBuilder_ == null) {
+          repeats_ = JOutPiqi.timer_repeats.getDefaultInstance();
+        } else {
+          repeatsBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
@@ -2244,7 +2648,11 @@ public final class JOutPiqi {
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.repeats_ = repeats_;
+        if (repeatsBuilder_ == null) {
+          result.repeats_ = repeats_;
+        } else {
+          result.repeats_ = repeatsBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2268,7 +2676,7 @@ public final class JOutPiqi {
           setDuration(other.getDuration());
         }
         if (other.hasRepeats()) {
-          setRepeats(other.getRepeats());
+          mergeRepeats(other.getRepeats());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2323,9 +2731,13 @@ public final class JOutPiqi {
               duration_ = input.readUInt32();
               break;
             }
-            case 24: {
-              bitField0_ |= 0x00000004;
-              repeats_ = input.readUInt32();
+            case 26: {
+              JOutPiqi.timer_repeats.Builder subBuilder = JOutPiqi.timer_repeats.newBuilder();
+              if (hasRepeats()) {
+                subBuilder.mergeFrom(getRepeats());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setRepeats(subBuilder.buildPartial());
               break;
             }
           }
@@ -2391,25 +2803,94 @@ public final class JOutPiqi {
         return this;
       }
       
-      // required uint32 repeats = 3;
-      private int repeats_ ;
+      // required .timer_repeats repeats = 3;
+      private JOutPiqi.timer_repeats repeats_ = JOutPiqi.timer_repeats.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.timer_repeats, JOutPiqi.timer_repeats.Builder, JOutPiqi.timer_repeatsOrBuilder> repeatsBuilder_;
       public boolean hasRepeats() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public int getRepeats() {
-        return repeats_;
+      public JOutPiqi.timer_repeats getRepeats() {
+        if (repeatsBuilder_ == null) {
+          return repeats_;
+        } else {
+          return repeatsBuilder_.getMessage();
+        }
       }
-      public Builder setRepeats(int value) {
+      public Builder setRepeats(JOutPiqi.timer_repeats value) {
+        if (repeatsBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          repeats_ = value;
+          onChanged();
+        } else {
+          repeatsBuilder_.setMessage(value);
+        }
         bitField0_ |= 0x00000004;
-        repeats_ = value;
-        onChanged();
+        return this;
+      }
+      public Builder setRepeats(
+          JOutPiqi.timer_repeats.Builder builderForValue) {
+        if (repeatsBuilder_ == null) {
+          repeats_ = builderForValue.build();
+          onChanged();
+        } else {
+          repeatsBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder mergeRepeats(JOutPiqi.timer_repeats value) {
+        if (repeatsBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              repeats_ != JOutPiqi.timer_repeats.getDefaultInstance()) {
+            repeats_ =
+              JOutPiqi.timer_repeats.newBuilder(repeats_).mergeFrom(value).buildPartial();
+          } else {
+            repeats_ = value;
+          }
+          onChanged();
+        } else {
+          repeatsBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
         return this;
       }
       public Builder clearRepeats() {
+        if (repeatsBuilder_ == null) {
+          repeats_ = JOutPiqi.timer_repeats.getDefaultInstance();
+          onChanged();
+        } else {
+          repeatsBuilder_.clear();
+        }
         bitField0_ = (bitField0_ & ~0x00000004);
-        repeats_ = 0;
-        onChanged();
         return this;
+      }
+      public JOutPiqi.timer_repeats.Builder getRepeatsBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getRepeatsFieldBuilder().getBuilder();
+      }
+      public JOutPiqi.timer_repeatsOrBuilder getRepeatsOrBuilder() {
+        if (repeatsBuilder_ != null) {
+          return repeatsBuilder_.getMessageOrBuilder();
+        } else {
+          return repeats_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.timer_repeats, JOutPiqi.timer_repeats.Builder, JOutPiqi.timer_repeatsOrBuilder> 
+          getRepeatsFieldBuilder() {
+        if (repeatsBuilder_ == null) {
+          repeatsBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JOutPiqi.timer_repeats, JOutPiqi.timer_repeats.Builder, JOutPiqi.timer_repeatsOrBuilder>(
+                  repeats_,
+                  getParentForChildren(),
+                  isClean());
+          repeats_ = null;
+        }
+        return repeatsBuilder_;
       }
       
       // @@protoc_insertion_point(builder_scope:timer)
@@ -4648,6 +5129,11 @@ public final class JOutPiqi {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_message_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_timer_repeats_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_timer_repeats_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_timer_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -4682,15 +5168,17 @@ public final class JOutPiqi {
       "ist\"\"\n\006result\022\n\n\002ok\030\001 \001(\010\022\014\n\004stop\030\002 \001(\010\"" +
       "T\n\007message\022\035\n\trecipient\030\001 \002(\0132\n.recipien" +
       "t\022\024\n\014command_name\030\002 \002(\t\022\024\n\014command_args\030" +
-      "\003 \003(\014\"6\n\005timer\022\n\n\002id\030\001 \002(\t\022\020\n\010duration\030\002" +
-      " \002(\r\022\017\n\007repeats\030\003 \002(\r\"w\n\006action\022\022\n\nstop_" +
-      "timer\030\001 \001(\t\022\033\n\013start_timer\030\002 \001(\0132\006.timer" +
-      "\022!\n\013kick_player\030\003 \001(\0132\014.userid_list\022\031\n\007m",
-      "essage\030\004 \001(\0132\010.message\"U\n\021callback_respo" +
-      "nse\022\027\n\006result\030\001 \002(\0132\007.result\022\r\n\005state\030\002 " +
-      "\002(\014\022\030\n\007actions\030\003 \003(\0132\007.action\"Q\n\010respons" +
-      "e\022$\n\010response\030\001 \001(\0132\022.callback_response\022" +
-      "\037\n\006system\030\002 \001(\0132\017.system_request"
+      "\003 \003(\014\"2\n\rtimer_repeats\022\020\n\010infinity\030\001 \001(\010" +
+      "\022\017\n\007repeats\030\002 \001(\r\"F\n\005timer\022\n\n\002id\030\001 \002(\t\022\020" +
+      "\n\010duration\030\002 \002(\r\022\037\n\007repeats\030\003 \002(\0132\016.time" +
+      "r_repeats\"w\n\006action\022\022\n\nstop_timer\030\001 \001(\t\022",
+      "\033\n\013start_timer\030\002 \001(\0132\006.timer\022!\n\013kick_pla" +
+      "yer\030\003 \001(\0132\014.userid_list\022\031\n\007message\030\004 \001(\013" +
+      "2\010.message\"U\n\021callback_response\022\027\n\006resul" +
+      "t\030\001 \002(\0132\007.result\022\r\n\005state\030\002 \002(\014\022\030\n\007actio" +
+      "ns\030\003 \003(\0132\007.action\"Q\n\010response\022$\n\010respons" +
+      "e\030\001 \001(\0132\022.callback_response\022\037\n\006system\030\002 " +
+      "\001(\0132\017.system_request"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -4729,8 +5217,16 @@ public final class JOutPiqi {
               new java.lang.String[] { "Recipient", "CommandName", "CommandArgs", },
               JOutPiqi.message.class,
               JOutPiqi.message.Builder.class);
-          internal_static_timer_descriptor =
+          internal_static_timer_repeats_descriptor =
             getDescriptor().getMessageTypes().get(4);
+          internal_static_timer_repeats_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_timer_repeats_descriptor,
+              new java.lang.String[] { "Infinity", "Repeats", },
+              JOutPiqi.timer_repeats.class,
+              JOutPiqi.timer_repeats.Builder.class);
+          internal_static_timer_descriptor =
+            getDescriptor().getMessageTypes().get(5);
           internal_static_timer_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_timer_descriptor,
@@ -4738,7 +5234,7 @@ public final class JOutPiqi {
               JOutPiqi.timer.class,
               JOutPiqi.timer.Builder.class);
           internal_static_action_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(6);
           internal_static_action_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_action_descriptor,
@@ -4746,7 +5242,7 @@ public final class JOutPiqi {
               JOutPiqi.action.class,
               JOutPiqi.action.Builder.class);
           internal_static_callback_response_descriptor =
-            getDescriptor().getMessageTypes().get(6);
+            getDescriptor().getMessageTypes().get(7);
           internal_static_callback_response_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_callback_response_descriptor,
@@ -4754,7 +5250,7 @@ public final class JOutPiqi {
               JOutPiqi.callback_response.class,
               JOutPiqi.callback_response.Builder.class);
           internal_static_response_descriptor =
-            getDescriptor().getMessageTypes().get(7);
+            getDescriptor().getMessageTypes().get(8);
           internal_static_response_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_response_descriptor,

@@ -22,7 +22,7 @@ public class GLIExample implements GLI {
                     JOutPiqi.action.newBuilder().setStartTimer(
                         JOutPiqi.timer.newBuilder().setId("timer")
                             .setDuration(1000)
-                            .setRepeats(5)
+                            .setRepeats(JOutPiqi.timer_repeats.newBuilder().setRepeats(3))
                         )
                     )
         ).build();
