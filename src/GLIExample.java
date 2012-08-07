@@ -63,7 +63,11 @@ public class GLIExample implements GLI {
         	System.out.println("Internal error");
         }
 
-        return demo().build();
+        return JOutPiqi.response.newBuilder().setResponse(
+                JOutPiqi.callback_response.newBuilder()
+                    .setResult(JOutPiqi.result.newBuilder().setStop(true))
+                    .setState(ByteString.copyFromUtf8("finalstate"))
+            ).build();
     }
 
     @Override
