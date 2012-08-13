@@ -11,6 +11,7 @@ message buy_item_request {
 }
 
 message system_request {
+    // only one field at the time should be specified:
     optional buy_item_request buy_item = 1;
     optional grant_coins_request grant_coins = 2;
 }
@@ -21,6 +22,7 @@ message system_error {
 }
 
 message system_response {
+    // only one field at the time should be specified:
     optional bool ok = 1;
     optional system_error error = 2;
 }

@@ -34,6 +34,7 @@ message handle_timer_complete {
 }
 
 message request {
+    // only one field at the time should be specified:
     optional init init = 1;
     optional handle_user_join handle_user_join = 2;
     optional handle_user_leave handle_user_leave = 3;
